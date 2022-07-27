@@ -1,8 +1,9 @@
+import NavBar from './NavBar'
+
 function App() {
   return (
-    <p>Hello wrld</p>
-  
-    )
+    <NavBar/>
+  )
 }
 
 export default App;
