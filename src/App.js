@@ -5,7 +5,7 @@ function App() {
   return (
     <>
       <Header />
-      <ItemListContainer name="informacion" />
+      <ItemListContainer name="STORE" />
     </>
   )
 }
