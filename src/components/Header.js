@@ -3,7 +3,7 @@ const Footer = () => {
   return (
 
     <>
-      <div class="grid grid-cols-12 grid-rows-3 h-28 gap-2 place-items-center bg-blacknew font-extrabold use border-2">
+      <div class="grid grid-cols-12 grid-rows-3 h-28 gap-1 place-items-center bg-blacknew font-extrabold use border-4 border-b-borderBlackNew rounded-full shadow-2xl">
         <Navbar />
         <div class="col-start-12 col-end-13 bg-sky-900 row-start-2" >
           <div ><svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-13 bg-blacknew" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">

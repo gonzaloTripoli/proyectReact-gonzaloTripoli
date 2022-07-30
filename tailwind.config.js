@@ -6,7 +6,8 @@ module.exports = {
       colors: {
         transparent: 'transparent',
         current: 'currentColor',
-        blacknew: '#333333'
+        blacknew: '#333333',
+        borderBlackNew:'#e8e8e8'
       },
     },
   },
