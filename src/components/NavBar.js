@@ -16,7 +16,7 @@ function NavBar() {
                 <NavItem name="OFFERS" />
             </div>
             <div class="col-start-5 col-end-6 row-start-2">
-                <NavItem name="More" />
+                <NavItem name="More"  />
             </div>
         </>)
 }
