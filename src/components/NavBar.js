@@ -1,4 +1,5 @@
 import CartWidget from "./CartWidget"
+import NavItem from "./NavItem"
 
 
 function NavBar() {
@@ -6,16 +7,16 @@ function NavBar() {
         <>
             <div class="col-start-1 row-start-2"><CartWidget /></div>
             <div class="col-start-2 col-end-3  row-start-2">
-                <a href="default.asp" class="hover:bg-sky-50 rounded-lg hover:ring-sky-500" >Home</a>
+                <NavItem name="Phones" />
             </div>
             <div class="col-start-3 col-end-4 row-start-2 ">
-                <a href="default.asp" class="hover:bg-sky-50 rounded-lg hover:ring-sky-500" >About</a>
+                <NavItem name="TV`s" />
             </div>
             <div class="col-start-4 col-end-5 row-start-2">
-                <a href="default.asp" class="hover:bg-sky-50 rounded-lg hover:ring-sky-500" >Contact</a>
+                <NavItem name="OFFERS" />
             </div>
             <div class="col-start-5 col-end-6 row-start-2">
-                <a href="default.asp" class="hover:bg-sky-50 rounded-lg hover:ring-sky-500" >Market</a>
+                <NavItem name="More" />
             </div>
         </>)
 }
