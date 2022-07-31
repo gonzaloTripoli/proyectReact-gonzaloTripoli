@@ -5,7 +5,7 @@ import NavItem from "./NavItem"
 function NavBar() {
     return (
         <>
-            <div class="col-start-1 row-start-2"><CartWidget /></div>
+            <div class="col-start-1 row-start-2 "><CartWidget /></div>
             <div class="col-start-2 col-end-3  row-start-2">
                 <NavItem name="Phones" />
             </div>
@@ -15,8 +15,9 @@ function NavBar() {
             <div class="col-start-4 col-end-5 row-start-2">
                 <NavItem name="OFFERS" />
             </div>
-            <div class="col-start-5 col-end-6 row-start-2">
-                <NavItem name="More"  />
+            <div class="col-start-11 col-end-12 row-start-2 ">
+
+                <NavItem name="Support" ></NavItem>
             </div>
         </>)
 }
