@@ -40,7 +40,7 @@ const ItemCount = () => {
 
             </div>
             <div className="col-start-2 col-end-5 row-start-3">
-                <button onClick={reset} className="bg-gradient-to-r from-pink-500 to-violet-500 rounded-lg font-black h-9"> Agregar al carrito</button>
+                <button onClick={reset} className="bg-gradient-to-r from-red-500 to-red-800 rounded-lg font-black h-9"> Agregar al carrito</button>
             </div>
 
         </div>
