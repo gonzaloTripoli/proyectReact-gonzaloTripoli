@@ -6,7 +6,7 @@ const Main = () => {
 
         <>
             <ItemListContainer name="Store" />
-            <ItemCount></ItemCount>
+            <ItemCount initial={0} stock={10} />
         </>
     )
 }

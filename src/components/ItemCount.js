@@ -1,10 +1,9 @@
 import { useState } from "react"
 
 
-const ItemCount = () => {
+const ItemCount = ({stock, initial}) => {
 
-    let stock = 10
-    const [contador, setContador] = useState(0)
+    const [contador, setContador] = useState(initial)
 
     const increase = () => {
         if (contador < stock) {
@@ -28,10 +27,11 @@ const ItemCount = () => {
     return (
         <div class="grid grid-cols-5 gap-2 grid-rows-2 place-items-center font-mono font-extrabold">
 
+
             <div className="col-start-2 col-end-3 justify-self-end row-start-1">
                 <button onClick={reduce}>-</button>
             </div>
-            <div className="col-start-3 col-end-4 row-start-1">
+            <div className="col-start-3 col-end-4 row-start-1 row row-end-2 border-double ">
                 <p >{contador}</p>
 
             </div>
