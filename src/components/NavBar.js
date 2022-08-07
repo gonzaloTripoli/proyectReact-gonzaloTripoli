@@ -5,7 +5,7 @@ import NavItem from "./NavItem"
 function NavBar() {
     return (
         <>
-            <div class="col-start-1 row-start-2 "><CartWidget /></div>
+            <div class="col-start-1 row-start-2 "><CartWidget src="/images/logo.png" /></div>
             <div class="col-start-2 col-end-3  row-start-2">
                 <NavItem name="Phones" />
             </div>

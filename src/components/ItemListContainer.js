@@ -1,10 +1,23 @@
+import ItemList from "./ItemList"
+
 const ItemListContainer = (greeting) => {
 
-    return (
-        <div class="grid grid-cols-6 grid-rows-3 gap-2 place-items-center font-mono font-extrabold">
-            <div class="col-start-2 col-span-4 row-start-2 "><p> Este es nuestro {greeting.name}</p></div>
+    var products = [{
+        title: "iphone 13",
+        id: "1",
+        price: 1500,
+        imageUrl: "/images/product-images/iphone13.webp"
+    }, {
+        title: "iphone 12",
+        id: "2",
+        price: 1300,
+        imageUrl: "/images/product-images/iphone12.webp"
 
-        </div>
+    }]
+
+
+    return (
+        <ItemList data={products} />
     )
 }
 export default ItemListContainer

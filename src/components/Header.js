@@ -1,6 +1,6 @@
 import Navbar from "./NavBar"
-import NavItem from "./NavItem"
-const Footer = () => {
+
+const Header = () => {
   return (
     // hover:bg-black rounded-md hover:text-white
     <>
@@ -25,4 +25,4 @@ const Footer = () => {
 
   )
 }
-export default Footer
+export default Header
