@@ -3,7 +3,7 @@ import CartWidget from "./CartWidget"
 const Item = ({ data }) => {
     return (
 
-        <div className="grid place-items-center text-center border-black border-4  " >
+        <div className="grid place-items-center text-center border-gray-500 border-4 rounded-lg  shadow-2xl" >
             <div className="row-start-1">
                 <p >{data.title}</p>
             </div>

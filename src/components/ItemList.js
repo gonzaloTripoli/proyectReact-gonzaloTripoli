@@ -23,6 +23,21 @@ const ItemList = ({ data }) => {
     return (
         <>
             <div className="grid grid-cols-5 grid-rows-6 gap-16 place-items-center w-max " >
+                <div className="row-start-1 w-44">
+                <Item data={dataChange[0]} />
+                </div>
+                <div className="row-start-1  w-full">
+                <Item data={dataChange[1]} />
+                </div>
+                <div className="row-start-1  w-full">
+                <Item data={dataChange[0]} />
+                </div>
+                <div className="row-start-1  w-full">
+                <Item data={dataChange[1]} />
+                </div>
+                <div className="row-start-1 w-full ">
+                <Item data={dataChange[1]} />
+                </div>
                 <div className="row-start-2 w-44">
                 <Item data={dataChange[0]} />
                 </div>
