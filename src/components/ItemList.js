@@ -13,8 +13,6 @@ const ItemList = ({ data }) => {
         price: "cargando",
         imageUrl: "cargando"
     }])
-
-
     useEffect(() => {
         setTimeout(() => {
             console.log("SSS")
@@ -24,8 +22,24 @@ const ItemList = ({ data }) => {
 
     return (
         <>
-            <Item data={dataChange[0]} />
-            <Item data={dataChange[1]} />
+            <div className="grid grid-cols-5 grid-rows-6 gap-16 place-items-center" >
+                <div className="row-start-2">
+                <Item data={dataChange[0]} />
+                </div>
+                <div className="row-start-2">
+                <Item data={dataChange[1]} />
+                </div>
+                <div className="row-start-2">
+                <Item data={dataChange[0]} />
+                </div>
+                <div className="row-start-2">
+                <Item data={dataChange[1]} />
+                </div>
+                <div className="row-start-2">
+                <Item data={dataChange[1]} />
+                </div>
+                
+            </div>
         </>
 
     )
