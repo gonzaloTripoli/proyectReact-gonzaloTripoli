@@ -1,23 +1,29 @@
 import ItemList from "./ItemList"
+import { products } from "../utils/products"
+import { useEffect, useState } from "react"
+import { customFetch } from "../utils/customFetch"
 
 const ItemListContainer = (greeting) => {
 
-    var products = [{
-        title: "iphone 13",
-        id: "1",
-        price: 1500,
-        imageUrl: "/images/product-images/iphone13.webp"
-    }, {
-        title: "iphone 12",
-        id: "2",
-        price: 1300,
-        imageUrl: "/images/product-images/iphone12.webp"
+    const [list, setList] = useState([])
+    const [loading, setLoading] = useState(true)
+    useEffect(() => {
+        setLoading(true)
+        customFetch(products)
+            .then(a => {
+                setList(a)
+                setLoading(false)
+            })
 
-    }]
+    }, [])
 
 
     return (
-        <ItemList data={products} />
-    )
+        <div>
+            {!loading ?
+                <ItemList data={list} />
+                :
+                <p>loading</p>}
+        </div>)
 }
 export default ItemListContainer
