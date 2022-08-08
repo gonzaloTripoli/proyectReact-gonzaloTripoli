@@ -1,5 +1,4 @@
 import Item from "./Item"
-import { useState, useEffect } from "react"
 
 const ItemList = ({ data }) => {
 
@@ -10,8 +9,6 @@ const ItemList = ({ data }) => {
                     <Item key={product.id} data={product} />
                 </div>)
                 }
-
-
             </div>
         </>
 
