@@ -23,7 +23,7 @@ const ItemListContainer = (greeting) => {
             {!loading ?
                 <ItemList data={list} />
                 :
-                <p>loading</p>}
+                <h2 className="text-black font-extrabold font-black">loading</h2>}
         </div>)
 }
 export default ItemListContainer
