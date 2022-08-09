@@ -1,7 +1,7 @@
 import ItemList from "./ItemList"
-import { products } from "../utils/products"
+import { products } from "../../utils/products"
 import { useEffect, useState } from "react"
-import { customFetch } from "../utils/customFetch"
+import { customFetch } from "../../utils/customFetch"
 
 const ItemListContainer = (greeting) => {
 
@@ -20,10 +20,12 @@ const ItemListContainer = (greeting) => {
 
     return (
         <div>
+            <p className="text-center font-black">{greeting.greeting}</p>
+
             {!loading ?
                 <ItemList data={list} />
                 :
-                <h2 className="text-black font-extrabold font-black">loading</h2>}
+                <h2 className="text-black font-extrabold ">loading</h2>}
         </div>)
 }
 export default ItemListContainer
