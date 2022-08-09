@@ -3,39 +3,39 @@ export const products = [{
     id: "1",
     price: 1500,
     imageUrl: "/images/product-images/iphone13.webp",
-    Stock: 40,
+    stock: 40,
     category: "phones"
 
 }, {
-    title: "iphone 12",
+    title: "Iphone 12",
     id: "2",
     price: 1300,
     imageUrl: "/images/product-images/iphone12.webp",
-    Stock: 40,
+    stock: 40,
     category: "phones"
 
 }, {
-    title: "iphone 11",
+    title: "Iphone 11",
     id: "3",
     price: 1500,
     imageUrl: "/images/product-images/iphone13.webp",
-    Stock: 40,
+    stock: 40,
     category: "phones"
 
 }, {
-    title: "iphone x",
+    title: "Iphone x",
     id: "4",
     price: 1300,
     imageUrl: "/images/product-images/iphone12.webp",
-    Stock: 40,
+    stock: 40,
     category: "phones"
 
 }, {
-    title: "iphone 7",
+    title: "Iphone 7",
     id: "5",
     price: 1300,
     imageUrl: "/images/product-images/iphone12.webp",
-    Stock: 40,
+    stock: 40,
     category: "phones"
 
 }]
