@@ -2,9 +2,10 @@ import ItemList from "./ItemList"
 import { products } from "../../utils/products"
 import { useEffect, useState } from "react"
 import { customFetch } from "../../utils/customFetch"
+import { useParams } from "react-router-dom"
 
-const ItemListContainer = (greeting) => {
-
+const ItemListContainer = ({ }) => {
+    const id = useParams()
     const [list, setList] = useState([])
     const [loading, setLoading] = useState(true)
     useEffect(() => {
@@ -15,12 +16,12 @@ const ItemListContainer = (greeting) => {
                 setLoading(false)
             })
 
-    }, [])
+    }, [id])
 
 
     return (
         <div>
-            <p className="text-center font-black">{greeting.greeting}</p>
+            <p className="text-center font-black">Store</p>
 
             {!loading ?
                 <ItemList data={list} />

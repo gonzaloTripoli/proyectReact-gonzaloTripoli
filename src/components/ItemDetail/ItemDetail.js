@@ -1,6 +1,5 @@
 const ItemDetail = ({ data }) => {
-    console.log(data)
-
+console.log(data)
     return (
         < div className="grid gap-4">
             <div className="col-start-1">
@@ -9,7 +8,7 @@ const ItemDetail = ({ data }) => {
 
             <div className="col-start-2 flex items-start ">
                 <div className="py-8 grid gap-2">
-                    <p class="text-sm font-mono">Category:{data.category}</p>
+                    <p className="text-sm font-mono">Category:{data.category}</p>
                     <h1 className="text-2xl">{data.title}</h1>
                     <br />
                     <p> {data.price}$</p>
