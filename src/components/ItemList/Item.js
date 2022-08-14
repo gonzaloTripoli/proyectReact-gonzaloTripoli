@@ -2,6 +2,7 @@ import { Link } from "react-router-dom"
 import CartWidget from "../CartWidget"
 
 const Item = ({ data }) => {
+    console.log(data)
     return (
 
         <div className="grid place-items-center text-center border-gray-500 border-4 rounded-lg  shadow-2xl" >
@@ -17,7 +18,7 @@ const Item = ({ data }) => {
             </div>
             <div className="row-start-4 ">
                 <p>{data.price} $</p>
-             <button className="bg-gray-700 rounded-2xl w-24">Ver detalle</button>
+                <Link to="/phones/"> <button className="bg-gray-700 rounded-2xl w-24">Ver detalle</button></Link>
             </div>
 
         </div>

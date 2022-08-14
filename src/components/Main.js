@@ -1,11 +1,16 @@
 import ItemDetailContainer from './ItemDetail/ItemDetailContainer';
 import ItemListContainer from './ItemList/ItemListContainer';
+import { Routes, Route } from "react-router-dom"
 const Main = () => {
     return (
         < >
             <div className='grid place-items-center  '>
-                <ItemListContainer greeting={"Store"} />
-                <ItemDetailContainer />
+                <Routes>
+                    <Route path="/" element={<ItemListContainer  />} />
+                    <Route path="/products/:id" element={<ItemListContainer/>} />
+                    <Route path="/products/phones/:id" element={<ItemDetailContainer />} />
+                  
+                </Routes>
             </div>
         </>
     )
