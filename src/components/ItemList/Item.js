@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import CartWidget from "../CartWidget"
 
 const Item = ({ data }) => {
@@ -8,7 +9,7 @@ const Item = ({ data }) => {
                 <p >{data.title}</p>
             </div>
             <div className="row-start-2">
-                <CartWidget src={data.imageUrl} />
+                <CartWidget src={data.imageUrl} path={data.id} />
             </div>
             <div className="row-start-3">
                 <p>Articulo Nro. {data.id}</p>
@@ -16,7 +17,7 @@ const Item = ({ data }) => {
             </div>
             <div className="row-start-4 ">
                 <p>{data.price} $</p>
-                <button className="bg-gray-700 rounded-2xl w-24">Ver detalle</button>
+             <button className="bg-gray-700 rounded-2xl w-24">Ver detalle</button>
             </div>
 
         </div>
