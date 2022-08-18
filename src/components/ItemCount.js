@@ -3,6 +3,7 @@ import { useState } from "react"
 
 const ItemCount = ({onAdd,stock, initial}) => {
 
+
     const [contador, setContador] = useState(initial)
 
     const increase = () => {
@@ -41,7 +42,7 @@ const ItemCount = ({onAdd,stock, initial}) => {
 
             </div>
             <div className="col-start-1 col-end-4 row-start-3">
-                <button onClick={reset} className="bg-gradient-to-r from-red-500 to-red-800 rounded-lg font-black h-9"> Agregar al carrito</button>
+                <button onClick={onAdd}  className="bg-gradient-to-r from-red-500 to-red-800 rounded-lg font-black h-9"> Agregar al carrito</button>
             </div>
 
         </div>

@@ -10,7 +10,7 @@ var path = "/products/"+data.category+"/" +data.id
                 <p >{data.title}</p>
             </div>
             <div className="row-start-2">
-                <CartWidget src={data.imageUrl} path={data.id} />
+                <CartWidget src={data.imageUrl} path={path} />
             </div>
             <div className="row-start-3">
                 <p>Articulo Nro. {data.id}</p>
