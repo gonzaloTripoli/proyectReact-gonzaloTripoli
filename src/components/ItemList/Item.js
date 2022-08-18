@@ -5,7 +5,7 @@ const Item = ({ data }) => {
 var path = "/products/"+data.category+"/" +data.id
     return (
 
-        <div className="grid place-items-center text-center border-gray-500 border-4 rounded-lg shadow-2xl w-40 h-80 " >
+        <div className="grid place-items-center text-center border-gray-200 border-4 rounded-lg shadow-2xl w-40 h-80 " >
             <div className="row-start-1">
                 <p >{data.title}</p>
             </div>

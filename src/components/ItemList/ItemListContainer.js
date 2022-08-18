@@ -5,7 +5,7 @@ import { customFetch } from "../../utils/customFetch"
 import { useParams } from "react-router-dom"
 
 const ItemListContainer = ({ }) => {
-    const {id} = useParams()
+    const { id } = useParams()
     console.log(id)
     const [list, setList] = useState([])
     const [loading, setLoading] = useState(true)
@@ -13,25 +13,23 @@ const ItemListContainer = ({ }) => {
         setLoading(true)
         customFetch(products)
             .then(a => {
-                if(id!=null){
+                if (id != null) {
                     setLoading(false)
                     setList(a.filter(x => x.category === id))
-                }else{
+                } else {
                     setList(a)
                     setLoading(false)
                 }
-         
+
             })
 
     }, [id])
-
-
-    
-
+    var title = id!=undefined? id=="phones"? "PHONES" : id =="tv" ? "TELEVISIONS" : "AUDIO" : "MAIN PAGE"
     return (
         <div>
-            <p className="text-center font-black">Store</p>
-
+            <div className="h-40 text-center align-bottom">
+                <p className="py-12  text-3xl ">{title}</p>
+            </div>
             {!loading ?
                 <ItemList data={list} />
                 :
