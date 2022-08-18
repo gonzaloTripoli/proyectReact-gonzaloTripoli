@@ -4,7 +4,7 @@ export const products = [{
     price: 1500,
     imageUrl: "/images/product-images/iphone13.webp",
     stock: 40,
-    category: "phones"
+    category: "tv"
 
 }, {
     title: "Iphone 12",
@@ -12,7 +12,7 @@ export const products = [{
     price: 1300,
     imageUrl: "/images/product-images/iphone12.webp",
     stock: 40,
-    category: "phones"
+    category: "audio"
 
 }, {
     title: "Iphone 11",
