@@ -12,7 +12,7 @@ const ItemDetail = ({ data }) => {
         <>
             < div className="grid gap-4">
                 <div className="col-start-1">
-                    <img src={data.imageUrl}></img>
+                    <img className="rounded-lg" src={data.imageUrl}></img>
                 </div>
 
                 <div className="col-start-2 flex items-start ">
