@@ -27,7 +27,7 @@ const ItemCount = ({onAdd,stock, initial}) => {
 
     return (
         
-        <div classNam="grid grid-cols-3 gap-2 grid-rows-1 place-items-center font-mono font-extrabold bg-zinc-700 w-2/12 rounded-3xl " >
+        <div className="grid grid-cols-3 gap-2 grid-rows-1 place-items-center font-mono font-extrabold bg-zinc-700 w-2/12 rounded-3xl " >
 
 
             <div className="col-start-1 col-end-2 justify-self-end row-start-1">
