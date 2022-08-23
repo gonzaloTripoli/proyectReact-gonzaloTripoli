@@ -27,13 +27,13 @@ const ItemListContainer = ({ }) => {
     var title = id!=undefined? id=="phones"? "PHONES" : id =="tv" ? "TELEVISIONS" : "AUDIO" : "MAIN PAGE"
     return (
         <div>
-            <div className="h-40 text-center align-bottom">
+            <div className="h-40 text-center align-bottom font-mono">
                 <p className="py-12  text-3xl ">{title}</p>
             </div>
             {!loading ?
                 <ItemList data={list} />
                 :
-                <h2 className="text-black font-extrabold ">loading</h2>}
+                <h2 className="text-black font-extrabold font-mono">loading</h2>}
         </div>)
 }
 export default ItemListContainer

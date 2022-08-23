@@ -28,7 +28,7 @@ const ItemDetail = ({ data }) => {
 
             </div >
             {
-                !onAdd == true ?
+                !onAdd ?
                     <ItemCount stock={data.stock} initial={0} onAdd={add} />
                     :
                     <Link to="/cart">
